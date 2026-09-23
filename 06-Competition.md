@@ -4,7 +4,7 @@ The event features three separate competition days played on-site. The first com
 
 The CTF infrastructure will be hosted in the cloud. The participants will connect to the cloud using infrastructure prepared by the organizers on-premises.
 
-Each team has its own table in the game arena. Each table has a switch, which has at least 12 Ethernet ports available (i.e., excluding ports already used by the organizers). ==Each table has at least 12 power sockets available== (“Schuko” / Type F) for a total of at least 3.5 kW power capacity per table. Some of that power will be used for other hardware (e.g., the switch); expect there to be roughly 3 kW available for players.
+Each team has its own table in the game arena. Each table has a switch, which has at least 12 Ethernet ports available (i.e., excluding ports already used by the organizers). Each table has at least 12 power sockets available (“Schuko” / Type F) for a total of at least 3.5 kW power capacity per table. Some of that power will be used for other hardware (e.g., the switch); expect there to be roughly 3 kW available for players.
 
 Team tables may include additional hardware or network devices provided by the organizers for challenges or infrastructural support. This equipment, sourced from the venue, sponsors, or the organizers themselves, must be left on the table at the end of the competition, unless otherwise specified.
 
