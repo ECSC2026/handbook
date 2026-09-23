@@ -127,6 +127,7 @@ The ticket panel contains several buttons, each corresponding to a specific tick
 | formal | related to complaints, policies questions | ENISA, Jury, Steering Committee | Staff, Jury     |
 | challenge | related to challenges | Player               | Staff, Author, Jury |
 | emergency | the type of a ticket related to "emergency" questions, in case of urgent emergencies, please first contact staff on site! | everyone             | Staff, Jury     |
+| Press / Communications | Contact Comms about press visits, interviews, photo/video or press-angel support. | everyone             | Staff,  Press Room Managers ,Jury |
 
 Emergencies category is for emergency tickets only.
 
