@@ -124,7 +124,7 @@ Attack-Defense CTFs are a type of cybersecurity competition in which participati
 
 
 :::warning
-We will only provide minimal information here. The rest of the information can be found in the Attack-Defense Wiki ([https://wiki.ad.ecsc2026.de](https://wiki.ad.ecsc2025.de)), which takes precedence over this Handbook. This applies to sections 6.4 and 7.2.
+We will only provide minimal information here. The rest of the information can be found in the Attack-Defense Wiki (<https://wiki.ad.ecsc2026.de>), which takes precedence over this Handbook. This applies to sections 6.4 and 7.2.
 
 :::
 
