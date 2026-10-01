@@ -297,7 +297,7 @@ Players are allowed to bring a basic hardware setup: one laptop each, mice, keyb
 
 * 1 additional computer (max 300 W total output power as indicated on the charger, e.g., laptop, mini-PC, Raspberry Pi) for hosting internal services. It may not be used as the primary computer to solve challenges.
 * 1 externally powered monitor, in total.
-* 10 self-contained monitors (without an external power source, e.g., USB monitors) or tablets in total.
+* 10 self-contained monitors (without an external power source, e.g., USB monitors) in total.
 
 No power extenders are allowed except for the ones provided by the organizers.
 
@@ -307,7 +307,7 @@ Each team is required to bring their own ethernet cables to connect their device
 
 Each team is required to bring all the power adapters they need. Each table has at least 12 sockets available (type F compatible).
 
-The hardware equipment necessary to solve the hardware challenges is provided by the organizers; players are not allowed to use any additional tool to solve the hardware challenges apart from their laptops and phones or tablets.
+The hardware equipment necessary to solve the hardware challenges is provided by the organizers; players are not allowed to use any additional tool to solve the hardware challenges apart from their laptops and phones.
 
 Additional equipment must be submitted in advance for approval by the organizers and venue staff.
 
@@ -324,25 +324,32 @@ Penalties will be decided by the jury in the form of:
 * Temporary or permanent exclusion of one or more team members from the competition.
 * In extreme cases, complete disqualification of the team from the competition.
 
-## 6.11. LLM Usage Ban
+## 6.11. LLM Usage Restrictions
 
 Usage of LLMs is restricted during the competition. The following section describes which kind of LLM usage is allowed and which is prohibited.
 
-Sometimes it is not clear when a service uses an LLM or it is not easy to turn it off. We still want to provide as much freedom as possible so for there spirit of the competition here is a non exhaustive list of things where we have a clear stance: 
+While we use the term LLM here, the same rules apply to other models (e.g., Jev) that behave similarly to an LLM, but might not formally be an LLM.
+
+Sometimes it is not clear whether a service uses an LLM or it is not easy to turn it off. We still want to provide as much freedom as possible so for there spirit of the competition here is a non-exhaustive list of things where we have a clear stance:
 
 What is prohibited:
 
-* Agentic AI such as Codex or Claude
+* Agentic AI such as Codex or Claude Code
 * LLM-based chats such as ChatGPT
-* LLM-based code completion (such as copilot) 
-* Expanding (or interacting with) the AI summary of search engines like Google
+* LLM-based code completion (such as copilot)
+* Usage of the AI summary of search engines like Google
+  * This means using Google without disabling the AI summaries is forbidden
   * We suggest you may use an extension to disable it
 * AI Search (e.g. Google Search in AI mode)
+* Locally run models
 
 What is allowed for its intended purpose only:
 
-* Translation software such as DeepL
+* Translation software such as DeepL for translating text
 * OCR software
+* Pregenerated content such as LLM generated blog posts or services like DeepWiki
+  * Note that the content needs to be pregenerated and that using any interactive LLM features they offer (e.g., DeepWiki's chat) is forbidden
+* Usage of LLMs to prepare your tooling or setup before the competition
 
 If you are unsure whether a service you want to use is allowed or prohibited, you can always ask the organizers!
 
