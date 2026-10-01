@@ -360,3 +360,5 @@ As an enforcement measure for the LLM ban we aim to create screen recordings dur
 Screen recordings will be accessible only to a strictly limited group of people (consisting of the jury and selected members of the watchdog and core organization team) and will be handled with utmost care.
 
 All screen recordings will be kept onsite and will not be uploaded anywhere.
+
+The implemented screen recording measures are mandatory. Participation without recording all used screens will not be permitted.
