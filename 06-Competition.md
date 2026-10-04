@@ -22,14 +22,14 @@ We strongly encourage players, captains, and coaches to carefully read the secti
 
 ### 6.2.1. Schedule
 
-The Jeopardy competition lasts 12 hours. Writeups can be submitted during and up to 10 minutes after the competition.
+The Jeopardy competition lasts 12 hours. Each writeup must be submitted within 10 minutes of solving the corresponding challenge. Writeup submissions remain open until 22:10 for challenges solved near the end of the competition.
 
 | Time (CEST) | Event |
 |-------------|-------|
 | 9:00        | Setup and testing |
 | 10:00       | Jeopardy competition starts. Challenges become accessible, flags and writeups can be submitted. |
 | 22:00       | Jeopardy competition ends. |
-| 22:10       | Writeup submission deadline. |
+| 22:10       | Writeup submissions close. The 10-minute deadline for each solved challenge still applies. |
 
 In case of unforeseen circumstances the schedule can be altered. In such a case, the organizers will inform all teams. Where it would affect the competition length, the exact details of any possible schedule change will be decided by the Jury.
 
@@ -39,7 +39,7 @@ The approximate number of challenges for the Jeopardy competition will be announ
 
 Unless a challenge's description states otherwise, the flag format matches the following regular expression: `^ECSC\{.*\}$`
 
-Additionally, players are required to upload a writeup for each solved challenge before the writeup submission deadline. A working solver script or exploit is considered a writeup equivalent (must be delivered in a form that can be easily analyzed if needed). Writeups can be minimal (e.g. a copy of the solve script). The purpose is solely to be able to see how the challenge was solved. In some cases, the team handing in the writeup may be asked follow-up questions.
+Additionally, players are required to upload a writeup for each solved challenge within 10 minutes of solving the challenge. A working solve script or exploit is considered a writeup equivalent (must be delivered in a form that can be easily analyzed if needed). Writeups can be minimal (e.g., a few sentences on the central steps of the challenge). The purpose is solely to be able to see how the challenge was solved. In some cases, the team handing in the writeup may be asked follow-up questions by the jury or technical staff.
 
 
 :::warning
@@ -283,7 +283,7 @@ The organizers may disclose any vulnerabilities (including 0-days) used during t
 
 Please note that various activities, including Discord messages across all channels, competition network traffic, Jeopardy platform usage, and entire Attack-Defense network traffic are recorded and logged. It will be accessed in case of a suspected rule violation.
 
-Any data we record will be deleted within 30 days after the conclusion of ECSC 2026, except for data fragments that may need to be retained for ongoing investigations, if any. Such data will be removed when no longer needed.
+Except for screen recordings, which are covered by section 6.12, any data we record will be deleted within 30 days after the conclusion of ECSC 2026, except for data fragments that may need to be retained for ongoing investigations, if any. Such data will be removed when no longer needed.
 
 ## 6.9. Allowed/necessary tools and hardware equipment
 
@@ -307,11 +307,15 @@ Each team is required to bring their own ethernet cables to connect their device
 
 Each team is required to bring all the power adapters they need. Each table has at least 12 sockets available (type F compatible).
 
-The hardware equipment necessary to solve the hardware challenges is provided by the organizers; players are not allowed to use any additional tool to solve the hardware challenges apart from their laptops and phones.
+The hardware equipment necessary to solve the hardware challenges is provided by the organizers; players are not allowed to use any additional tool to solve the hardware challenges apart from their laptops.
 
 Additional equipment must be submitted in advance for approval by the organizers and venue staff.
 
 In case of players' hardware failure, teams can request to substitute a device. The request must be reported to a watchdog and will then be raised to the jury. If the request is accepted, the team coaches can bring a new device to the players and bring the old device outside of the arena.
+
+### 6.9.3. Phone usage
+
+Phones will not be recorded. However, phone usage is restricted to necessary purposes unrelated to solving competition challenges, such as emergency communication and 2FA. Excessive phone usage may lead to the jury questioning the player regarding their activities.
 
 ## 6.10. Penalties and complaints
 
@@ -355,10 +359,18 @@ If you are unsure whether a service you want to use is allowed or prohibited, yo
 
 ## 6.12. Screen Recordings
 
-As an enforcement measure for the LLM ban we aim to create screen recordings during the Jeopardy and A/D CTF competitions. Participants should therefore take care to not expose any private information during the competitions and prepare accordingly. Details about the concrete implementation will follow later on.
+As an enforcement measure for the LLM ban, screen recordings will be required during the Jeopardy and A/D CTF competitions. Participants should therefore take care not to expose any private information during the competitions and prepare accordingly.
 
-Screen recordings will be accessible only to a strictly limited group of people (consisting of the jury and selected members of the watchdog and core organization team) and will be handled with utmost care.
+Screen recordings will be made locally and saved on the player's system. A guide on how to set up screen recordings on the system will be provided before the competition.
+
+Screen recordings from both competitions must be saved until Friday, October 16, 2026, at 15:00 CEST.
+
+A jury member may request the screen recordings from a player. In this case, the player must hand over the recordings. Any refusal to hand over the screen recordings may be referred to the jury for review.
+
+Screen recordings will be accessible only to a strictly limited group of people (consisting of the jury and selected members of the technical staff) and will be handled with utmost care.
 
 All screen recordings will be kept onsite and will not be uploaded anywhere.
 
-The implemented screen recording measures are mandatory. Participation without recording all used screens will not be permitted.
+Any screen recordings handed over by the player will only be stored temporarily on dedicated storage media and will only be watched on a dedicated system. After the competition, both the disks of the dedicated system and the storage media will be securely wiped.
+
+The screen recording measures are mandatory. Participation without recording all used screens will not be permitted.
