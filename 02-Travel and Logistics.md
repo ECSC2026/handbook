@@ -6,6 +6,7 @@ In addition to what you would usually bring, don’t forget
 * if your notebook does not have an Ethernet port, an appropriate adapter;
 * a wifi adapter, if your notebook does not have wifi; and
 * a travel power adapter for Type F (“Schuko”) sockets, if needed.
+* Players who prefer a different layout than QWERTZ should bring their own USB keyboard for CTF-Unplugged. We also recommend bringing a USB mouse.
 
 It is hard for us to predict the weather in Bochum in October. Temperatures typically vary between 5 and 20 °C, and rain is possible. You should check a forecast shortly before travel and pack accordingly.
 

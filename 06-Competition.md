@@ -77,7 +77,7 @@ Day 3 of ECSC 2026 (Wednesday, October 14, 2026) is **not** part of the main com
 
 ### 6.3.1: CTF-Unplugged
 
-CTF Unplugged will be a multi-round competition. Teams will compete to solve challenges the fastest, in an offline environment on organiser provided laptops. This event does not influence the final winners of ECSC, but will instead have it's own scoreboard and own mention at the awards ceremony. This competition will focus on the ability to solve complex cybersecurity related challenges in a constrained environment, under time pressure.
+CTF Unplugged will be a multi-round competition. Teams will compete to solve challenges the fastest, in an offline environment on organiser provided laptops. This event does not influence the final winners of ECSC, but will instead have its own scoreboard and own mention at the awards ceremony. This competition will focus on the ability to solve complex cybersecurity related challenges in a constrained environment, under time pressure.
 
 Note: This is the first time this format is being run, rules are subject to clarification or change in the coming weeks. Some exact numbers are still under discussion based on venue constraints and similar, and will be clarified closer to the event.
 
@@ -88,12 +88,19 @@ Note: This is the first time this format is being run, rules are subject to clar
 * Teams will receive points based on how quickly they solve challenges.
 * A top cut of teams from the four qualifying rounds will compete in the Semi-Final, and the top overall teams after the Semi-Final will compete in the Final.
 * The final placements will be determined solely by performance in the final.
+* Teams can send different Players each round
+
+  \
+
+The provided laptops are Lenovo ThinkPad T490s with an Intel Core i7-8565U processor, 24 GB RAM and German QWERTZ keyboards. Players who prefer a different layout should bring their own USB keyboard. We also recommend bringing a USB mouse. 
+
+Challenges, handouts and flag submissions will be available through a local CTFd instance.
 
 ### 6.3.2 Qualifying rounds
 
 There will be 4 qualifying rounds, one for each of Reversing, Pwn, Crypto and Web.
 
-* All ECSC and Guest teams may participate, (up to 40 teams.)
+* All ECSC and Guest teams may participate, (up to 42 teams.)
 * Each team may select up to two members to collaborate in each round
 * Each team will have access to one shared laptop
 * A round is planned to last \~50 minutes.
@@ -105,16 +112,22 @@ There will be 4 qualifying rounds, one for each of Reversing, Pwn, Crypto and We
 
 Based on the scores from the four qualifying rounds, a top cut of teams will qualify onwards to the Semi Final
 
-* Top [X] teams by points after the four qualifying rounds may participate in the semi final
+* Top 8 teams by points after the four qualifying rounds may participate in the semi final
 * The semi final is expected to last \~50 minutes
 * Teams will have access to four laptops to share
-* Teams may each send up to [X] players to compete
+* Teams may each send up to 6 players to compete
 * There will be multiple challenges across a range of categories.
 * Teams will be scored based on challenges solved and time-to-solve
 
 ### 6.3.4 Finals
 
-Based on overall scores from qualifiers combined with Semi Finals (with higher weighting to semi-final scores), the top [X] teams will qualify for the final.
+Based on overall scores from qualifiers combined with Semi Finals (with higher weighting to semi-final scores), the top 3 teams will qualify for the final.
+
+* The final is expected to last \~50 minutes
+* Each team will have access to four laptops to share
+* Teams may each send up to 6 players to compete
+* There will be multiple challenges across a range of categories.
+* The final placements will be determined solely by performance in the final.
 
 ## 6.4. Day 4: Attack-Defense
 
@@ -374,3 +387,120 @@ All screen recordings will be kept onsite and will not be uploaded anywhere.
 Any screen recordings handed over by the player will only be stored temporarily on dedicated storage media and will only be watched on a dedicated system. After the competition, both the disks of the dedicated system and the storage media will be securely wiped.
 
 The screen recording measures are mandatory. Participation without recording all used screens will not be permitted.
+
+## 6.13. Screen Recording Setup
+
+### Minimum Requirements
+
+What we want at minimum:
+
+* 1 fps
+* Output resolution should match screen resolutions
+* All screens in one video file
+* Record mouse cursor
+* Encoding: H.264, minimum keyframe every 5 seconds
+* Frames should only depend on earlier frames
+* Disable buffering
+* Use high-quality encoding settings (CRF 16 for x264)
+
+### How to Do It with OBS
+
+Open OBS and cancel the setup wizard.
+
+**Settings → Video**
+
+* Set **Base** and **Output** resolution to your screen resolution (in this example, 1920×1080).
+* Select **Integer FPS Value** and enter `1`.
+
+**Settings → Audio**
+
+* Disable all **Global Audio Devices**.
+
+**Settings → Output → Advanced → Recording**
+
+* **Type:** Custom Output (FFmpeg)
+* **Output Type:** Output to File
+* **Save location:** `Desktop/OBS Recordings`
+* **Container:** matroska (MKV)
+* **Video Encoder:** libx264
+* **Rescale Output:** unchecked
+* **Keyframe interval:** 5 frames
+* **Audio Tracks:** uncheck all
+* **Audio Encoder:** Disable Encoder
+
+Paste into **Video Encoder Settings**:
+
+```
+crf=16 preset=medium profile=high threads=1 x264-params=scenecut=40:bframes=0:rc-lookahead=0:sync-lookahead=0
+```
+
+**Settings → Advanced → Recording**
+
+* Set **File Name Formatting** to:
+
+```
+  ECSC2026_%CCYY-%MM-%DD_%hh-%mm-%ss
+```
+
+**Add a Capture Source**
+
+Add a capture source, select your monitor, and enable cursor capture:
+
+* **Ubuntu Xorg:** Screen Capture (XSHM)
+* **Ubuntu Wayland:** Screen Capture (PipeWire)
+* **Windows:** Display Capture, using DXGI Desktop Duplication
+* **macOS:** macOS Screen Capture; grant permission if prompted.
+
+**Two Monitors**
+
+For two monitors, arrange them in the OS display settings and add one source per monitor. Set **Base** and **Output** resolution to their combined size. For two 1920×1080 monitors side by side:
+
+* **Canvas/output:** 3840×1080
+* **Left source:** X=0, Y=0
+* **Right source:** X=1920, Y=0
+* Keep native sizes, Top Left alignment, No bounds, and cursor capture enabled on both.
+
+**Start Recording**
+
+Apply the settings, check the preview, then click **Start Recording**. Click **Stop Recording** when finished.
+
+
+**Windows**
+
+[windows.mp4 1920x1080](uploads/f57a2b0a-5149-4dbb-b4fc-31e4bd445020.mp4)
+
+**macOS**
+
+[macos26.mp4 1920x1080](uploads/8a3d404f-a4f3-4ed8-8c07-86594684b4ee.mp4)
+
+**Ubuntu Wayland**
+
+[ubuntu-wayland.mp4 1920x1080](uploads/36aad4de-276e-43c7-89ce-51c2e0c2e472.mp4)
+
+**Ubuntu Xorg**
+
+[ubuntu-xorg.mp4 1920x1080](uploads/409e4338-3732-4fd4-a488-49151b15318a.mp4)
+
+**Ubuntu Two Monitors**
+
+[ubuntu-two-monitors.mp4 1920x1080](uploads/0b9f4869-afc2-484d-a131-2b09a2aa3bbb.mp4)
+
+### Your Responsibilities
+
+You are responsible for making sure your recording works as expected. Therefore, please test this setup before the competition by recording your screen for a while and then rewinding through the recording. Also make sure that you have enough disk space to record the full A/D and Jeopardy competition. We expect about 1 GB/h with the example setup described above; however, it is crucial that you check this with your own settings and resolution to be sure that your disk space is sufficient.
+
+**Alternative Setups**
+
+If you are worried about RAM usage or have a "cursed-arch" setup, you are responsible for getting some form of screen recording working that meets these requirements. You don't have to use OBS.
+
+You can also try piping libdrmtap into FFmpeg; that should work. You could also wire it up as a systemd service. Ideally, we would use FFmpeg with kmsgrab, but it doesn't support recording the mouse cursor.
+
+### Frequently Asked Questions
+
+We anticipate that people will have some questions about the screen recordings, so we want to provide some answers here:
+
+**System crash or reboot:** If your system crashes, or you need to reboot your system, please start the recording again afterwards. To document this, please create a short ticket describing what happened and noting that there will be a short gap in your recording. There is no need to wait for an answer to the ticket.
+
+**Corrupted or missing recordings:** If you notice that your screen recordings are corrupted or missing, please start recording your screen and open a ticket to explain the situation. This ticket will then be forwarded to the jury for review. There is no need to wait for an answer to the ticket.
+
+**Entering sensitive data:** If you need to enter sensitive data, such as credit card information, on your system, please inform a watchdog that you will pause the recording and why. The watchdog will note down the time when the recording was stopped and will stay in your vicinity to note down, when it was started again. Please keep this time span as short as possible.
