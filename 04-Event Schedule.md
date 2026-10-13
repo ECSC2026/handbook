@@ -16,8 +16,8 @@ You will always find the most up-to-date schedule on the official ECSC 2026 webs
 
 | 13:00 – 15:45 | Team registration | RuhrCongress Bochum – Foyer |
 |---------------|-------------------|-----------------------------|
-| 16:00 – 18:30 | Opening ceremony  | RuhrCongress Bochum – Great Hall |
-| 18:30 –       | Dinner and networking | RuhrCongress Bochum – Player and delegation areas |
+| 16:15 – 18:00 | Opening ceremony  | RuhrCongress Bochum – Great Hall |
+| 18:00 –       | Dinner and networking | RuhrCongress Bochum – Player and delegation areas |
 
 ## 4.2. Tuesday, October 13th
 
@@ -47,5 +47,5 @@ You will always find the most up-to-date schedule on the official ECSC 2026 webs
 |---------------|------------------------------------|-----------------------------------------------|
 | 14:00 – 15:00 | Arrival                            | Jahrhunderthalle Bochum                       |
 | 15:00 – 18:00 | Closing Ceremony                   | Jahrhunderthalle Bochum                       |
-| 18:00 – 20:00 | Dinner                             | Jahrhunderthalle Bochum                       |
+| 18:15 – 20:00 | Dinner                             | Jahrhunderthalle Bochum                       |
 | 20:00 – 02:00 | Afterparty                         | Jahrhunderthalle Bochum                       |

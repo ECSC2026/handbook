@@ -12,6 +12,23 @@ Teams can connect to the Internet through Ethernet cables to their switches. Pla
 
 There will be a backup over Wi-Fi.
 
+### Network access
+
+Wired: Plug into ports 0–23 on your table's switch. The other ports are reserved for other uses and may not work. You can find the port number right beneath the port.
+
+WiFi: There are three networks.
+
+* ECSC2026: no password
+* ECSC2026-Open: no password. It uses Enhanced Open (OWE), so very old devices may not see it or be able to connect.
+* ECSC2026-Event: connects you to your own team's network.
+  * Security: WPA2-Enterprise
+  * EAP method: EAP-TTLS
+  * Inner authentication: PAP
+  * Username / password: your authentik username and password (you can set/change that in your authentik settings)
+  * CA certificate: use the system certificates (validate the server)
+  * Domain / server name: radius.ecsc2026.de
+  * Anonymous identity: anonymous (optional)
+
 ## 6.2. Day 2: Jeopardy
 
 Day 2 of ECSC 2026 (Tuesday, October 13, 2026) is the Jeopardy competition.
