@@ -345,7 +345,15 @@ In case of players' hardware failure, teams can request to substitute a device. 
 
 ### 6.9.3. Phone usage
 
-Phones will not be recorded. However, phone usage is restricted to necessary purposes unrelated to solving competition challenges, such as emergency communication and 2FA. Excessive phone usage may lead to the jury questioning the player regarding their activities.
+Phones will not be recorded. However, phone usage is restricted to necessary purposes unrelated to solving competition challenges, such as emergency communication and 2FA.
+
+Phones shall not be placed on tables during the competition except for the above allowed purposes.
+
+Phone usage is not allowed outside the CTF area (e.g., while smoking).
+
+### 6.9.4. Outdoor breaks (incl. smoking)
+
+Outdoor breaks are only permitted in the designated area assigned by the organizers. A watchdog shall be present in this area.
 
 ## 6.10. Penalties and complaints
 
